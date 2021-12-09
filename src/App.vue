@@ -4,18 +4,23 @@
     <header>
       <NavHeader />
     </header>
+
+    <main>
+      <MainIntro />
+    </main>
     
   </div>
 </template>
 
 <script>
-/* import 'bootstrap/scss/bootstrap.scss' */
 import NavHeader from '@/components/NavHeader.vue'
+import MainIntro from '@/components/MainIntro.vue'
 
 export default {
   name: 'App',
   components: {
     NavHeader,
+    MainIntro,
   }
 }
 </script>

@@ -36,13 +36,13 @@
 
             <li class="icon-social">
                 <a href="#">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
             </li>
 
             <li class="icon-social">
                 <a href="#">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </li>
         </ul>
@@ -80,6 +80,18 @@ section{
     height: 60px;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background-image: url('../assets/img/background-pattern-wavify.png');
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #eaeaea;
+        z-index: -1;
+    }
 }
 
 .container{
@@ -118,9 +130,12 @@ ul{
         margin: 0 10px;
 
         a{
+            cursor: pointer;
+
             i{
                 font-size: 18px;
                 color: $text-color;
+                cursor: pointer;
             }
         }
     }
