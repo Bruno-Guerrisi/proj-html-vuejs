@@ -7,7 +7,10 @@
 
     <main>
       <MainIntro />
+
       <Statistics />
+
+      <AboutMe />
     </main>
     
   </div>
@@ -17,6 +20,7 @@
 import NavHeader from '@/components/NavHeader.vue'
 import MainIntro from '@/components/MainIntro.vue'
 import Statistics from '@/components/Statistics.vue'
+import AboutMe from '@/components/AboutMe.vue'
 
 export default {
   name: 'App',
@@ -24,6 +28,7 @@ export default {
     NavHeader,
     MainIntro,
     Statistics,
+    AboutMe,
   }
 }
 </script>

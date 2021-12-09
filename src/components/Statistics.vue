@@ -51,7 +51,7 @@ export default {
 @import '@/style/variables';
 
 section{
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 ul{

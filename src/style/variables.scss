@@ -11,7 +11,7 @@ $color-footer: #ffffff; /* todo */
 $font-playfair:'Playfair Display' , sans-serif;
 
 .container{
-    max-width: 1100px;
+    max-width: 1050px;
     margin: auto;
 }
 
@@ -34,6 +34,14 @@ img{
     &:hover{
         background-color: $color-list-nav;
     }
+}
+
+.text-other-color{
+    color: $alternativ-text-bt-price;
+}
+
+.text-spacing{
+    letter-spacing: 1px;
 }
 
 
