@@ -7,6 +7,7 @@
 
     <main>
       <MainIntro />
+      <Statistics />
     </main>
     
   </div>
@@ -15,12 +16,14 @@
 <script>
 import NavHeader from '@/components/NavHeader.vue'
 import MainIntro from '@/components/MainIntro.vue'
+import Statistics from '@/components/Statistics.vue'
 
 export default {
   name: 'App',
   components: {
     NavHeader,
     MainIntro,
+    Statistics,
   }
 }
 </script>
