@@ -54,20 +54,20 @@
 
 <script>
 export default {
-name: 'NavHeader',
+    name: 'NavHeader',
 
-data(){
-    return{
-        listNav: [
-            'Home',
-            'Pages',
-            'Courses',
-            'Features',
-            'Blog',
-            'Shop',
-        ]
-    }
-}
+    data(){
+        return{
+            listNav: [
+                'Home',
+                'Pages',
+                'Courses',
+                'Features',
+                'Blog',
+                'Shop',
+            ]
+        }
+    },
 
 
 }
@@ -82,15 +82,16 @@ section{
     align-items: center;
     position: fixed;
     width: 100%;
-    background-image: url('../assets/img/background-pattern-wavify.png');
+    z-index: 1;
 
     &::before{
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: #eaeaea;
-        z-index: -1;
+        z-index: 1;
+        background-image: url('../assets/img/background-pattern-wavify.png');
     }
 }
 
@@ -99,6 +100,7 @@ section{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 2;
 }
 
 a.logo{

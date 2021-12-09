@@ -32,4 +32,8 @@ export default {
 @import '@/style/global';
 @import '@/style/variables';
 
+header{
+  z-index: 4;
+}
+
 </style>
