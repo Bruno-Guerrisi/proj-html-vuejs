@@ -6,7 +6,7 @@
         <div class="text">
 
             <span class="price text-other-color">
-                <span>{{dollars}}</span>.{{cents}}
+                <span>${{dollars}}</span>.{{cents}}
             </span>
 
             <p class="description">

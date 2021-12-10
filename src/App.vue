@@ -13,6 +13,8 @@
             <AboutMe />
 
             <Courses :listCourses="courses"/>
+
+            <Bookstore />
         </main>
         
     </div>
@@ -24,6 +26,7 @@ import MainIntro from '@/components/MainIntro.vue'
 import Statistics from '@/components/Statistics.vue'
 import AboutMe from '@/components/AboutMe.vue'
 import Courses from '@/components/Courses.vue'
+import Bookstore from '@/components/Bookstore.vue'
 
 export default {
     name: 'App',
@@ -33,6 +36,7 @@ export default {
         Statistics,
         AboutMe,
         Courses,
+        Bookstore,
     },
     data() {
         return {
