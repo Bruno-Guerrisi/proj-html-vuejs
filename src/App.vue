@@ -15,6 +15,8 @@
             <Courses :listCourses="courses"/>
 
             <Bookstore />
+
+            <Sponsorimage :listSponsor="sponsor"/>
         </main>
         
     </div>
@@ -27,6 +29,7 @@ import Statistics from '@/components/Statistics.vue'
 import AboutMe from '@/components/AboutMe.vue'
 import Courses from '@/components/Courses.vue'
 import Bookstore from '@/components/Bookstore.vue'
+import Sponsorimage from '@/components/Sponsorimage.vue'
 
 export default {
     name: 'App',
@@ -37,6 +40,7 @@ export default {
         AboutMe,
         Courses,
         Bookstore,
+        Sponsorimage,
     },
     data() {
         return {
@@ -91,6 +95,14 @@ export default {
                     students: 50,
                 },
             ],
+
+            sponsor: [ 'client-logo-05-primary',
+                        'client-logo-06-primary',
+                        'client-logo-07-primary',
+                        'client-logo-04-primary',
+                        'client-logo-03-primary',
+                        'client-logo-02-primary',
+                        ]
         }
     }
 }

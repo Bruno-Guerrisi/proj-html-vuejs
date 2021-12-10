@@ -128,7 +128,7 @@ section{
 
     .image-two{
         position: absolute;
-        bottom: 0px;
+        bottom: -5px;
         left: 40%;
         transform: translateX(-50%);
         width: 65%;
