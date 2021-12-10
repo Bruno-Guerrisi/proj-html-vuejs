@@ -95,7 +95,7 @@ section{
     }
 
     p{
-        font-size: 14px;
+        font-size: 16px;
         color: $color-gray;
         margin-bottom: 20px;
         line-height: 25px;
@@ -109,6 +109,7 @@ section{
         border: 0;
         padding: 15px;
         border-radius: 5px;
+        font-weight: bold;
     }
 }
 

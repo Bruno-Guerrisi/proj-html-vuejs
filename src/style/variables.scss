@@ -13,6 +13,7 @@ $font-playfair:'Playfair Display' , sans-serif;
 .container{
     max-width: 1050px;
     margin: auto;
+    padding: 10px;
 }
 
 img{
@@ -25,6 +26,12 @@ img{
 
 .font-title{
     font-family: $font-playfair;
+}
+.text-spacing{
+    letter-spacing: 1px;
+}
+.col-gray{
+    color: $color-gray;
 }
 
 .hover-button{
@@ -40,8 +47,5 @@ img{
     color: $alternativ-text-bt-price;
 }
 
-.text-spacing{
-    letter-spacing: 1px;
-}
 
 

@@ -59,6 +59,10 @@ name: 'AboutMe',
 <style lang="scss" scoped>
 @import '@/style/variables';
 
+section{
+    margin-bottom: 70px;
+}
+
 .title-section{
     color: $alternativ-text-bt-price;
     font-size: 14px;
@@ -89,11 +93,12 @@ name: 'AboutMe',
             font-size: 16px;
             margin-bottom: 10px;
             line-height: 30px;
+            font-weight: bold;
         }
 
         .answers{
             color: $color-gray;
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
