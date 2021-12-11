@@ -17,6 +17,8 @@
             <Bookstore />
 
             <Sponsorimage :listSponsor="sponsor"/>
+
+            <Stories />
         </main>
         
     </div>
@@ -30,6 +32,7 @@ import AboutMe from '@/components/AboutMe.vue'
 import Courses from '@/components/Courses.vue'
 import Bookstore from '@/components/Bookstore.vue'
 import Sponsorimage from '@/components/Sponsorimage.vue'
+import Stories from '@/components/Stories.vue'
 
 export default {
     name: 'App',
@@ -41,6 +44,7 @@ export default {
         Courses,
         Bookstore,
         Sponsorimage,
+        Stories,
     },
     data() {
         return {
