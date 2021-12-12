@@ -5,11 +5,13 @@
             <div class="title-section">
 
                 <span class="col-gray text-spacing uppercase intro">
-                    begin your journay at maxcoach
+                    blog update
                 </span>
 
                 <h2 class="font-title">
-                    Latest <span class="text-other-color font-title">Online Courses</span>
+                    Interesting 
+                    <span class="text-other-color font-title">articles updated</span>
+                    daily
                 </h2>
             </div>
 
@@ -17,14 +19,12 @@
 
 
                 <div class="created-card" 
-                    v-for="(element, i) in listCourses" :key="`element-${i}`">
+                    v-for="(element, i) in listArticles" :key="`element-${i}`">
 
                     <CardCourses :url="element.poster"
-                                    :dollars="element.dollars"
-                                    :cents="element.cents"
+                                    :date="element.date"
                                     :title="element.title"
-                                    :lesson="element.lesson"
-                                    :students="element.students" />
+                                    :description="element.description" />
 
                     <!-- <div class="card">
 
@@ -59,12 +59,9 @@
 
 
             <div class="button-section">
-
-                <button class="hover-button">
-                    Get Started For Free
-
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                </button>
+                <span class="uppercase text-spacing text-other-color">
+                    view all post
+                </span>
             </div>
 
         </div>
@@ -75,10 +72,10 @@
 import CardCourses from "@/components/CardCourses.vue" 
 
 export default {
-    name: 'Courses',
+    name: 'Articles',
 
     props: {
-        listCourses: Array,
+        listArticles: Array,
     },
 
     components: {
@@ -96,7 +93,6 @@ section{
 }
 
 .title-section{
-    text-align: center;
     margin-bottom: 30px;
 
     .intro{
@@ -104,7 +100,7 @@ section{
     }
 
     h2{
-        font-size: 38px;
+        font-size: 32px;
     }
 }
 
@@ -115,22 +111,23 @@ section{
 }
 
 .created-card{
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     padding: 10px;
 }
 
 .button-section{
     text-align: center;
 
-    button{
-        width: 25%;
-        min-width: 15%;
-        background-color: $alternativ-text-bt-price;
-        color: $color-white;
-        border: 0;
-        padding: 15px;
-        border-radius: 5px;
+    span{
+
+        font-size: 14px;
         font-weight: bold;
+        border-bottom: 2px solid currentColor;
+        cursor: pointer;
+
+        &:hover{
+            color: $color-list-nav;
+        }
     }
 }
 

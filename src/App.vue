@@ -19,6 +19,8 @@
             <Sponsorimage :listSponsor="sponsor"/>
 
             <Stories />
+
+            <Articles :listArticles="articles"/>
         </main>
         
     </div>
@@ -33,6 +35,7 @@ import Courses from '@/components/Courses.vue'
 import Bookstore from '@/components/Bookstore.vue'
 import Sponsorimage from '@/components/Sponsorimage.vue'
 import Stories from '@/components/Stories.vue'
+import Articles from '@/components/Articles.vue'
 
 export default {
     name: 'App',
@@ -45,6 +48,7 @@ export default {
         Bookstore,
         Sponsorimage,
         Stories,
+        Articles,
     },
     data() {
         return {
@@ -54,7 +58,7 @@ export default {
                     poster: require('@/assets/img/motivation-course-06-480x298.jpg'),
                     dollars: '30',
                     cents: '00',
-                    description: 'How to be Successful: Create A Growth Mindset For Success',
+                    title: 'How to be Successful: Create A Growth Mindset For Success',
                     lesson: 3,
                     students: 50,
                 },
@@ -62,7 +66,7 @@ export default {
                     poster: require('@/assets/img/motivation-course-05-480x298.jpg'),
                     dollars: '30',
                     cents: '00',
-                    description: 'How to Build Confidence in Your Abilities',
+                    title: 'How to Build Confidence in Your Abilities',
                     lesson: 1,
                     students: 50,
                 },
@@ -70,7 +74,7 @@ export default {
                     poster: require('@/assets/img/motivation-course-04-480x298.jpg'),
                     dollars: '20',
                     cents: '00',
-                    description: 'Productivity Machine - Focus in a Distracted World',
+                    title: 'Productivity Machine - Focus in a Distracted World',
                     lesson: 1,
                     students: 50,
                 },
@@ -78,7 +82,7 @@ export default {
                     poster: require('@/assets/img/motivation-course-03-480x298.jpg'),
                     dollars: '20',
                     cents: '00',
-                    description: 'Effective Time Management Mastery - Complete Guide',
+                    title: 'Effective Time Management Mastery - Complete Guide',
                     lesson: 18,
                     students: 50,
                 },
@@ -86,7 +90,7 @@ export default {
                     poster: require('@/assets/img/motivation-course-02-480x298.jpg'),
                     dollars: '25',
                     cents: '99',
-                    description: 'Body Language Secrets for Entrepreneurs',
+                    title: 'Body Language Secrets for Entrepreneurs',
                     lesson: 19,
                     students: 50,
                 },
@@ -94,7 +98,7 @@ export default {
                     poster: require('@/assets/img/motivation-course-01-480x298.jpg'),
                     dollars: '19',
                     cents: '99',
-                    description: 'Management Skills: The Science of Leadership',
+                    title: 'Management Skills: The Science of Leadership',
                     lesson: 17,
                     students: 50,
                 },
@@ -106,7 +110,34 @@ export default {
                         'client-logo-04-primary',
                         'client-logo-03-primary',
                         'client-logo-02-primary',
-                        ]
+                        ],
+
+            articles: [
+                {
+                    poster: require('@/assets/img/motivation-blog-04-480x325.jpg'),
+                    date: 'May 13, 2020',
+                    title: 'How to Stay True to Your Personal Brand',
+                    description: 'When it comes to your business or career, you want ...',
+                },
+                {
+                    poster: require('@/assets/img/motivation-blog-03-480x325.jpg'),
+                    date: 'May 13, 2020',
+                    title: '5 Vital Lesson in 5 Years of Freelancing',
+                    description: "Being self-employed and working from home, it's easy to get ...",
+                },
+                {
+                    poster: require('@/assets/img/motivation-blog-02-480x325.jpg'),
+                    date: 'May 13, 2020',
+                    title: '11 Super Useful Tips for Small-Business Owners',
+                    description: 'Being a small-business owner poses a ton of challenges. We ...',
+                },
+                {
+                    poster: require('@/assets/img/motivation-blog-01-480x325.jpg'),
+                    date: 'May 13, 2020',
+                    title: 'How to Give Yourself Grace to Start Again',
+                    description: 'Forgive yourself for bad habits you may have started or ...',
+                },
+            ],
         }
     }
 }
