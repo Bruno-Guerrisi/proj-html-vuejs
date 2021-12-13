@@ -30,6 +30,8 @@
 
         <Navright />
 
+        <Returnup />
+
     </div>
 </template>
 
@@ -45,6 +47,7 @@ import Stories from '@/components/Stories.vue'
 import Articles from '@/components/Articles.vue'
 import Footer from '@/components/Footer.vue'
 import Navright from '@/components/Navright.vue'
+import Returnup from '@/components/Returnup.vue'
 
 export default {
     name: 'App',
@@ -60,6 +63,7 @@ export default {
         Articles,
         Footer,
         Navright,
+        Returnup,
     },
     data() {
         return {
