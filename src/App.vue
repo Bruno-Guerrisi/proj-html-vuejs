@@ -27,7 +27,9 @@
 
             <Footer />
         </footer>
-        
+
+        <Navright />
+
     </div>
 </template>
 
@@ -42,6 +44,7 @@ import Sponsorimage from '@/components/Sponsorimage.vue'
 import Stories from '@/components/Stories.vue'
 import Articles from '@/components/Articles.vue'
 import Footer from '@/components/Footer.vue'
+import Navright from '@/components/Navright.vue'
 
 export default {
     name: 'App',
@@ -56,6 +59,7 @@ export default {
         Stories,
         Articles,
         Footer,
+        Navright,
     },
     data() {
         return {
@@ -153,6 +157,10 @@ export default {
 <style lang="scss">
 @import '@/style/global';
 @import '@/style/variables';
+
+#app{
+    position: relative;
+}
 
 header{
   z-index: 4;
