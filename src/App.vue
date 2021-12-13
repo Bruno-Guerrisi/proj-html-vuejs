@@ -22,6 +22,11 @@
 
             <Articles :listArticles="articles"/>
         </main>
+
+        <footer>
+
+            <Footer />
+        </footer>
         
     </div>
 </template>
@@ -36,6 +41,7 @@ import Bookstore from '@/components/Bookstore.vue'
 import Sponsorimage from '@/components/Sponsorimage.vue'
 import Stories from '@/components/Stories.vue'
 import Articles from '@/components/Articles.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
     name: 'App',
@@ -49,6 +55,7 @@ export default {
         Sponsorimage,
         Stories,
         Articles,
+        Footer,
     },
     data() {
         return {
@@ -149,6 +156,13 @@ export default {
 
 header{
   z-index: 4;
+}
+
+footer{
+    background-color: #171621;
+    padding: 40px 0 20px;
+
+    color: white;
 }
 
 </style>
